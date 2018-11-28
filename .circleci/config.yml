@@ -3,3 +3,8 @@ jobs:
   build:
     docker:
       - image: "registry.access.redhat.com/rhscl/nodejs-8-rhel7:latest"
+    steps:
+      - checkout
+      - run:
+          name: s2i assemble
+          command: /usr/libexec/s2i/assemble
