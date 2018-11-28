@@ -1,0 +1,5 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: "registry.access.redhat.com/rhscl/nodejs-8-rhel7:latest"
