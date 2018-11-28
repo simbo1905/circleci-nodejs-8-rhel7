@@ -4,7 +4,8 @@ jobs:
     docker:
       - image: "registry.access.redhat.com/rhscl/nodejs-8-rhel7:latest"
     steps:
-      - checkout
+      - checkout:
+          path: /tmp/src/
       - run:
           name: s2i assemble
           command: /usr/libexec/s2i/assemble
